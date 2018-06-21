@@ -3,7 +3,7 @@
 
 html,body {margin:0;padding:0;background-color:#f6f6fa;}
 
-#toolbar {background:#0b2660;width:100%;padding:15px;box-sizing: border-box;align-items:center;}
+#toolbar {background:#0b2660;width:100%;padding:15px;box-sizing: border-box;align-items:center;position:fixed;top:0;left:0;z-index: 1090;}
 #toolbar div div .logo-container {align-items: center;display: flex;}
 #toolbar .fa-bars {color:#fff;margin:0 0 0 40px;font-size:2em;cursor:pointer;transition:all 0.2s ease-in-out;display:flex;align-items:center;}
 #toolbar .fa-bars:hover {color:#4fe28f;}
@@ -21,3 +21,4 @@ ul.myaccount .fa-chevron-down {display: inline-flex;margin: 1px 0 0 5px;font-siz
 ul.myaccount a:hover {opacity:1;}
 ul.myaccount a:hover > .fa-user,ul.myaccount a:hover > .fa-chevron-down {color:#4fe28f;}
 ul.myaccount .fa-user span {font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; font-weight: normal;font-size: 0.70em;margin: 5px 0 0 15px;}
+#sidebar {background:#f9fafc;border-right: 2px solid #ddd;box-sizing: border-box;padding: 25px;}
