@@ -21,7 +21,7 @@ ul.myaccount .fa-chevron-down {display: inline-flex;margin: 1px 0 0 5px;font-siz
 ul.myaccount a:hover {opacity:1;}
 ul.myaccount a:hover > .fa-user,ul.myaccount a:hover > .fa-chevron-down {color:#4fe28f;}
 ul.myaccount .fa-user span {font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; font-weight: normal;font-size: 0.70em;margin: 5px 0 0 15px;}
-#sidebar {background:#f9fafc;border-right: 2px solid #ddd;box-sizing: border-box;padding: 25px;}
+#sidebar {background:#f9fafc;border-right: 2px solid #ddd;box-sizing: border-box;padding: 25px;position:fixed;z-index:1030;}
 #main-content {padding: 20px 60px;}
 .subject-img {max-width: 120px;padding: 10px;background: #fff;border: 1px solid #ccc;border-radius: 50%;width:40%;display:inline-flex;}
 .subject-name {margin: 0;padding: 0;width: 100%;}
@@ -60,7 +60,7 @@ span.self, span.assessor, span.weighted {width: 10%;}
 span.comments {width: 40%;}
 span.files {width: 5%;}
 .tab-header i {display:flex;align-self:center;cursor:pointer;}
-.tab-info {background: #fff;margin: -15px 0 20px 15px;padding: 20px 30px;border-radius: 10px;display: flex;justify-content: space-between;flex-wrap:wrap;}
+.tab-info {background: #fff;margin: -15px 0 20px 15px;padding: 20px 30px;border-radius: 10px;display: none;}
 .tab-info .item {display:flex;justify-content: space-between;width:100%;box-sizing: border-box;border-bottom:1px solid #ccc;margin-bottom: 30px;padding: 20px 0 30px;}
 .tab-info .item:last-child {border-bottom:none;padding-bottom:0;margin-bottom:10px;}
 .tab-info .progress {margin:25px 0 10px;}
@@ -68,4 +68,14 @@ span.files {width: 5%;}
 .tab-info .item div.self,.tab-info .item div.assessor,.tab-info .item div.weighted {width:10%;display:flex;align-items:center;}
 .tab-info .item div.comments {width:40%;display:flex;align-items:center;}
 .tab-info .item div.files {width:6.5%;display:flex;align-items:center;}
+#side-info,#side-info-2 {background: #265eb1;width: calc(100% + 50px);margin: -25px;padding: 30px 20px;box-sizing: border-box;display:flex;align-items:center;color:#ddd;}
+#side-info .horiz-divider {margin:20px 0 0;}
+#search {width:52%;display:flex;align-items: center;}
+#search input[type="text"] {background: #265eb1;border: none;color: #fff;padding: 8px;outline:none;width:80%;}
+#search input[type="text"]::placeholder {color:#ddd;}
+button.btn.btn-default {background: none;color: #fff;border-right: 1px solid #ddd;border-radius: 0;padding: 0 20px 0 5px;width: 20%;height: 25px;align-self: center;}
+span.side-filters {padding: 0 20px;border-right: 1px solid #ddd;width:20%;}
+span.side-lists {padding:0 0 0 20px;width:20%;}
+span.side-advanced {padding: 0 20px;border-right: 1px solid #ddd;width:50%;}
+span.side-due {padding:0 0 0 20px;width:50%;}
 
